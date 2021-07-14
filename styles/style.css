@@ -1,0 +1,240 @@
+/* -------------
+Font Style
+-------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*-------------- 
+Body Font  
+----------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+/*---------------
+ Banner Part
+ -------------  */
+.banners{
+    background-color: #2D25A0;   
+}
+.banner{
+    display: flex;
+    margin-right: 50px;   
+}
+.container{
+    width: 1050px;  
+}
+.banner-title, .banner-photo{
+    width: 50%;   
+}
+.banner-title h1{
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    font-weight: 900;
+    padding-top: 50px;
+}
+.banner-title{
+    padding-left: 80px ;  
+}
+ a{
+    font-weight: 500;
+    margin-top: 27px;
+    color: white;
+    width: 168px;
+    height: 44px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+.banner-photo img{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    padding-left: 110px;
+}
+
+/*---------------- 
+Grid section 
+----------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px 30px;
+    margin-top: 70px;   
+}
+.grid-title h2{
+   font-weight: 900;
+}
+.grid{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 330px;
+    height: 474px;
+    padding: 15px;
+    background-color:  #FFFFFF;
+    box-shadow: 2px 2px 10px rgb(209, 201, 201);
+    border-image-slice: 1;  
+}
+.grid-photo img{
+    width: 100%;
+}
+
+/*--------------- 
+Highlites Section
+--------------  */
+
+.highlites{
+    display: flex;
+    padding-top: 165px;
+}
+.title, .cover{
+    width: 50%;
+}
+.title h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 0;
+}
+.title p{
+    padding-right: 150px;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.cover img{
+    Width : 567px;
+    Height: 427px; 
+    padding-left: 50px;   
+}
+/*----------
+   Footer
+------------  */
+
+.footer-div img{
+width: 483px;
+height: 110px;
+margin-left: 0px;
+}
+.footer-div{
+    text-align: center;
+    margin-top: 100px;   
+}
+.footer-div .icon a{
+   width: 32px;
+   height: 32px;
+   border-radius: 50%;
+   color:#969BAB;
+   background-color: #E7E7E8;
+   line-height: 32px;
+}
+/*--------------
+----------------
+ Responsive
+ ---------------
+ ------------ */
+
+ 
+/*---------------
+ Mobile Device
+ -------------  */
+
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+
+    }
+    .banner-title, .banner-photo{
+        width: 100%;
+    }
+    .banner{
+        flex-wrap: wrap;
+    }
+    .banner-title{
+        font-size: 36px;
+        padding-left: 15px;
+    }
+    .banner-photo img{
+        width: 80%;
+        padding-left: 50px;
+    }
+.grids{
+    grid-template-columns: repeat(1,1fr);
+}
+.highlites .title,.cover{
+    width: 100%;
+}
+.highlites{
+    flex-direction: column;
+    padding: 16px;
+}
+.highlites .cover img{
+    width: 100%;
+}
+.title{
+    font-size: 30px;
+}
+.title p{
+    padding-right: 0;
+}
+.cover{
+    margin-top: 29px;
+}
+.cover img{
+    padding-left: 0;
+}
+.footer-div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-div .pic img{
+    width: 300px;
+    height: 80px;
+}
+}
+
+/*----------
+ Ipad Device
+ ---------  */
+
+ @media only screen and (min-width:688px) and (max-width:992px) {
+
+.container{
+    width: 764px;
+}
+.banner-title{
+    padding-left: 35px;
+}
+.banner{
+    padding: 40px 0px;
+}
+.banner-photo img{
+    padding-left: 0;
+    padding-top: 150px;
+}
+.cover img{
+    padding-left: 0;
+}
+.title,.cover{
+    margin-right: 160px;
+}
+.title{
+    margin-bottom: 50px;
+}
+.title p{
+    padding-right: 50px;
+} 
+    .grids{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .highlites{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+ }

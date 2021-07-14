@@ -147,6 +147,48 @@ Form Part
     cursor: pointer;
 
 }
+
+/*----------
+ Photo Album
+ --------- */
+.album {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.photo-frame {
+    width: 300px;
+    height: 165px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-frame:hover .detail {
+    display: block;
+    background-color: rgba(139, 226, 197, 0.527);
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.detail {
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.2) rotate(360deg);
+    transition: transform 2s ease;
+}
 /*----------
    Footer
 ------------  */
